@@ -1,0 +1,36 @@
+info:
+  build:
+    version: 0.0.0
+  swagger:
+    title: Cognizant Rewards and Recognition api
+    description: API reference for developers
+    license: Apache License Version 2.0
+    licenseUrl: http://www.apache.org/licenses/LICENSE-2.0
+    termsOfServiceUrl: http://url.com
+    contact:
+      name: Dev-Team
+      url: https://cognizant.com
+      email: dev@nomail.com
+
+springfox:
+  documentation:
+    swagger:
+     v2:
+       path: /help
+
+# Spring properties
+spring:
+  profiles:
+    active: dev
+  
+
+endpoints:
+  health:
+    enabled: yes
+  shutdown:
+    enabled: yes
+
+# HTTP Server
+server:
+  port: 4444   # HTTP (Tomcat) port
+
